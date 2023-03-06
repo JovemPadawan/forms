@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <title>Registro de Formulário</title>
+        </head>
+    <body>
+        <h1>Registro de Formulário</h1>
+        <div class="conteudo">
+        <p>Por favor, preencha o formulário com as informações exigidas.</p>
+        <form action="file:///E:/Programacao/Off/Formul%C3%A1rio/page2/index.html" method="post">
+            
+                <fieldset>
+                    <label for="Primeiro-Nome">Coloque seu primeiro nome:<input required name="nome" id="Primeiro Nome" type="text"></label>
+                    <label for="Sobrenome">Coloque seu sobrenome: <input required name="sobrenome" id="Sobrenome" type="text"></label>
+                    <label for="E-mail">Coloque seu e-mail: <input required name="e-mail" id="E-mail" type="email"></label>
+                    <label for="Nova Senha">Crie uma nova senha: <input  name="nova-senha" pattern="[a-z A-Z 0-9]{8, 16,}" title="Letras de a-z/A-Z,0-9. Min 6 Max 18 caracteres." required id="Nova Senha" type="password"></label>
+<!-- minlength serve para especificar o número minimo de caractere -->
+                </fieldset>
+            
+            <fieldset>
+                <label for="personal-account"><input class="inline"  id="personal-account" type="radio" name="account-type"> Conta Pessoal</label>
+                <label for="business-account"><input class="inline" id="business-account" type="radio" name="account-type"> Conta Profissional</label>
+                <label for="terms-and-conditions"><input class="inline" id="terms-and-conditions" name="terms" required type="checkbox"> Eu aceito os <a target="_blank" href="https://www.freecodecamp.org/news/terms-of-service/"> termos e condições</a></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="profile-picture">Envie sua foto de perfil: <input name="profile-picture" id="profile-picture" type="file"></label>
+                <label for="age">Qual a sua idade? <!--<input id="age" type="number" min="18" max="120"> -->
+                    <select id="age">
+                        <option value="">(selecione um)</option>
+                        <option value="1">18-20</option>
+                        <option value="2">21-30</option>
+                        <option value="3">31-40</option>
+                        <option value="4">+41</option>
+                    </select></label>
+
+                <label for="referrer">Como você ouviu falar de nós?
+                    <select name="referrer" id="referrer">
+                        <option value="">(selecione um)</option>
+                        <option value="1">Televisão</option>
+                        <option value="2">Revista</option>
+                        <option value="3">Anúncio</option>
+                        <option value="4">Outro</option>
+                    </select>
+                </label>
+
+                <div class="textarea"> 
+                        <label for="bio">Fale um pouco de você:
+                        <textarea placeholder="Eu gosto de programar na praia..." name="bio" id="bio" type="number" min="18" max="120" rows="3" cols="30"></textarea>
+                        </label>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <input value="Enviar" type="submit"/>
+            </div>
+            </form>
+            
+        </div>
+
+    </body>
+    </html>
